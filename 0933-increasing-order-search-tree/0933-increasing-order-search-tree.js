@@ -1,3 +1,11 @@
+class TreeNode {
+    constructor(val = 0, left = null, right = null) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
+
 function inorderTraversal(root, result = []) {
     if (root) {
         inorderTraversal(root.left, result);
@@ -43,3 +51,4 @@ function printRightSkewed(root) {
 }
 
 printRightSkewed(newRoot);
+
